@@ -12,7 +12,7 @@ class TestDebug(unittest.TestCase):
         self.assertTrue(True)
 
     def test_args_to_string(self):
-        expected = '((1, 2, 3), {})'
+        expected = '((1, 2, 3),{})'
         result = debug.args_to_string(args=(1,2,3), kwargs={})
         self.assertEqual(result, expected)
 
@@ -25,7 +25,7 @@ class TestDebug(unittest.TestCase):
 
     def test_soma_custom_output(self):
 
-        expected = '((2, 3), {})'
+        expected = '((2, 3),{})'
 
         def test_output(text):
             self.assertEqual(text, expected)
