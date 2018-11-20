@@ -2,4 +2,4 @@ venv:
 	python -m venv venv
 
 test:
-	python -m unittest discover debug-fatec/test/
+	PYTHONPATH=src/ python -m unittest discover test/

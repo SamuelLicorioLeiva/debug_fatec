@@ -2,4 +2,3 @@ venv/
 **.py[cod]
 .*
 !.gitignore
-__pycache__
